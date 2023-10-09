@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurang IL Divino, Italienskt restaurang mitt i hjärtat av Stockholm.">
+    <meta name="author" content="Utvecklad av - Rodrigo Sebastian Carhuapoma Ruiz - Webbutvecklare.">
+    <meta name="keywords" content="Restaurang, Italienskt, Stockholm">
+    <link rel="icon" href="/img/restaurang-logo.png" type="image/icon">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>IL Divino</title>
+</head>
+<body>
+    <!--HEADER SECTION-->
+    <header id="header__section">
+        <div class="top__header">
+            <img src="/img/restaurang-logo.png" class="main__logo" alt="IL-divo logo" srcset="" data-aos="fade-right" data-aos-duration="2000">
+            <ul class="header__nav" id="activeNav">
+                <li><a href="#hero__section" class="nav__link" data-aos="fade-in" data-aos-duration="1000">Hem</a></li>
+                <li><a href="#om__section" class="nav__link" data-aos="fade-in" data-aos-duration="1000">Om IL Divino</a></li>
+                <li><a href="#menu__section" class="nav__link" data-aos="fade-in" data-aos-duration="1000">Meny</a></li>
+                <li><a href="#tider__section" class="nav__link" data-aos="fade-in" data-aos-duration="1000">Öppettider</a></li>
+            </ul>
+            <button class="header__btn" data-aos="fade-left" data-aos-duration="2000">Reservation</button>
+            <div class="hamburger__nav" id="activeBtn">
+                <img src="/img/sked-logo.png" class="hamburger__sked__logo" alt="sked-logo" srcset="">
+                <img src="/img/gaffel-logo.png" class="hamburger__gaffel__logo" alt="gaffel-logo" srcset="">
+            </div>
+        </div>
+        <div class="bottom__header">
+            <div class="flex__col__left">
+                <a href="" class="header__info" data-aos="fade-in" data-aos-duration="2000">Adress: Stockholmsgatan 34b Stockholm|</a>
+                <a href="" class="header__info" data-aos="fade-in" data-aos-duration="2000">Telefon: +08 645 385 22</a>
+            </div>
+            <div class="flex__col__right">
+                <a href="" class="header__ikons" data-aos="fade-up" data-aos-duration="3000"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="header__ikons" data-aos="fade-up" data-aos-duration="3000"><i class="fa-solid fa-envelope"></i></a>
+                <a href="" class="header__ikons" data-aos="fade-up" data-aos-duration="3000"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+    </header>
+    <!--MAIN SECTION-->
+    <section id="hero__section">
+            <div class="video__container">
+                <video autoplay muted loop id="main__video">
+                    <source src="/video/restaurant (Original).mp4" type="">
+                </video>
+                <div class="hero__banner">
+                    <h1 class="hero__banner__title" data-aos="fade-in" data-aos-duration="3000">Välkomen till IL Divino</h1>
+                    <p class="hero__banner__description" data-aos="fade-in" data-aos-duration="3000">Italienskt restaurang mitt i Hjärtan av Stockholm, en smakresa till La dolce Vitta!</p>
+                    <div class="hero__btns">
+                        <a href="" class="hero__banner__btn" data-aos="fade-right" data-aos-duration="5000">Boka ett bord!</a>   
+                        <a href="" class="hero__banner__btn" data-aos="fade-left" data-aos-duration="5000">kontakta restaurangen</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--ABOUT SECTION-->
+    <section id="om__section">
+        <div class="left__column">
+            <div class="om__top">
+                <h1 class="om__title" data-aos="fade-up" data-aos-duration="3000">IL Divino</h1>
+                <img src="/img/underline.png" class="underline" alt="" srcset="" data-aos="fade-in" data-aos-duration="3000">
+            </div>
+            <h2 class="om__subtitle" data-aos="fade-up" data-aos-duration="3000">En smakrik resa till det traditionella & kulinariska köket!</h2>
+            <p class="om__description" data-aos="fade-up" data-aos-duration="3000">Il Divino är en Italienskt restaurang som bygger på sin tradition i det Italiensak köket, vårt kök är inte endast baserat på det bästa av Cicilians traditionella rätter men även kärleken vi serverar till ditt bord!
+                <br>hos oss på Il Divino, med våra smakrika recepter och vårt traditionella matlagning kommer vi få dig att uppleva en smakrik resa till Cicilien från vårt egna kök till dina smaklökar!
+            </p>
+            <div class="booking__info">
+                <p class="booking__description" data-aos="fade-right" data-aos-duration="3000">vill du boka ett bord?!</p>
+                <a href="" class="boka__link" data-aos="fade-left" data-aos-duration="3000">klicka här!</a>
+            </div>
+        </div>
+        <div class="right__column">
+            <img src="/img/om-img.png" class="about__img" alt="" srcset="">
+        </div>
+    </section>
+    <!--MENY SECTION-->
+    <section id="menu__section">
+        <div class="menu__top">
+            <h1 class="menu__title" data-aos="fade-up" data-aos-duration="3000">En unik och smakrik Meny med varaiation</h1>
+            <img src="/img/underline.png" class="underline" alt="" srcset="" data-aos="fade-up" data-aos-duration="3000">
+        </div>
+        <p class="menu__info" data-aos="fade-in" data-aos-duration="3000">Våra Meny historia går tillbaka till 1850-talet, där en smakrik resa från Cecilia till Sverige påbörjades år 2000. Vi har olika rätter från, varma, kalla till ungs bakat pizzor.  här nere kan du se våran smakrika menyer!</p>
+        <div class="menu__btn__container">
+            <div class="btn__container">
+                <a href="" class="top__btn" data-aos="fade-right" data-aos-duration="3000">Varmarätter</a>
+                <a href="" class="top__btn" data-aos="fade-down" data-aos-duration="3000">Kallarätter</a>
+            </div>
+            <div class="btn__container">
+                <a href="" class="bottom__btn" data-aos="fade-up" data-aos-duration="3000">Piza menu</a>
+                <a href="" class="bottom__btn" data-aos="fade-left" data-aos-duration="3000">Vin & Dricklista</a>
+            </div>
+        </div>
+    </section>
+    <!--ÖPPETTIDER-SECTION-->
+    <section id="tider__section">
+            <div class="tider__top">
+                <h1 class="tider__title" data-aos="fade-down" data-aos-duration="3000">Våra öppettider</h1>
+                <img src="/img/underline.png" class="underline" alt="" srcset="" data-aos="fade-down" data-aos-duration="3000">
+            </div> 
+            <div class="card__container">
+                <div class="card" data-aos="fade-right" data-aos-duration="3000">
+                    <p>Måndag - Fredag</p>
+                    <li>måndag - stängd</li>
+                    <li>16:00 - 21:00</li>
+                </div>
+                <div class="card" data-aos="fade-in" data-aos-duration="3000">
+                    <p>Helg - Lördag</p>
+                    <li>Lördag 16:00 - 24:00</li>
+                    <li>Rödadagar - stängd</li>
+                </div>
+                <div class="card" data-aos="fade-left" data-aos-duration="3000">
+                   <p>Adress</p>
+                    <li>Stockholmsgatan 15</li>
+                    <li>Stockholms stad</li>
+                </div>
+            </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="/dist/js/main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

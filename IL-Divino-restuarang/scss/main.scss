@@ -1,0 +1,28 @@
+@import './variables';
+@import './header';
+@import './hero';
+@import './om';
+@import './menu';
+@import './tider';
+@import './hovers';
+
+//FONT INCLUDED//
+@font-face {
+    font-family: 'Gabriola';
+    src: url(/fonts/Gabriola.ttf);
+}
+//GLOBAL STYLING//
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 0.625rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Gabriola', sans-serif;
+}

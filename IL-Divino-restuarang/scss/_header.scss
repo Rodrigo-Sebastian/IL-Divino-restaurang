@@ -1,0 +1,164 @@
+#header__section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .top__header{
+        background-color: $primary-color;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem;
+        .main__logo{
+            height: 8rem;
+        }
+        .header__nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4rem;
+            li{
+                list-style: none;
+                .nav__link{
+                   font-size: 3rem;
+                   text-decoration: none;
+                   color: $font-color; 
+                }
+            }
+        }
+        .header__btn{
+            background-color: transparent;
+            border: 1px solid;
+            font-size: 2rem;
+            font-family: 'Gabriola', sans-serif;
+            padding: 1rem 4rem;
+            color: $font-color;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            -webkit-transition-duration: 0.4s;
+        }
+        .hamburger__nav{
+            display: none;
+            cursor: pointer;
+            .hamburger__sked__logo{
+                padding-right: 0.5rem;
+            }
+        }
+    }
+    .bottom__header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+        background-color: $font-color;
+        .flex__col__left{
+            .header__info{
+                font-size: 2rem;
+                text-decoration: none;
+                color: $background-color;
+                transition: all 0.5s ease;
+            }
+        }
+        .flex__col__right{
+            display: flex;
+            flex-direction: row;
+            padding-left: 17rem;
+            gap: 4rem;
+            .header__ikons{
+                font-size: 2rem;
+                color: $background-color;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES//
+@media (max-width: 768px){
+   #header__section{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .top__header{
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        .main__logo{
+            height: 5rem;
+        }
+        //Responsive Header//
+        .header__nav{
+            position: absolute;
+            display: none;
+            text-align: center;
+            gap: 4rem;
+            height: 0;
+            left: 0;
+            top: 12rem;
+            width: 100%;
+            opacity: 0;
+            background-color: #412626;
+            transition: opacity 0.8s ease, height 0s linear;
+            li{
+                padding-bottom: 6rem;
+            }
+        }
+        .header__nav.active{
+            display: block;
+            height: auto;
+            width: 100%;
+            opacity: 1;
+            z-index: 1;
+            top: 12rem;
+            padding-top: 5rem;
+            transition: opacity 0.3s ease, height 0s linear;
+        }
+        //END OF Responsive Header//
+        .header__btn{
+            padding: 1rem;
+            font-size: 0.8rem;
+            display: none;
+        }
+        .hamburger__nav{
+            display: block;
+            .hamburger__sked__logo{
+                height: 5rem;
+                transition: transform 0.3s ease;
+            }
+            .hamburger__gaffel__logo{
+                height: 5rem;
+                transition: transform 0.3s ease;
+            }
+            //ACTIVE EFFECT//
+                .hamburger__sked__logo.active{
+                    height: 5rem;
+                    transform: rotate(45deg) translate(18px, -13px);
+                }
+                .hamburger__gaffel__logo.active{
+                    height: 5rem;
+                    transform: rotate(-45deg) translate(-3px, 0px);
+                }
+        }
+    }
+    .bottom__header{
+        width: 100%;
+        .flex__col__left{
+            .header__info{
+                font-size: 1.6rem;
+            }
+        }
+        .flex__col__right{
+            padding-left: 0;
+            gap: 2rem;
+            .header__ikons{
+                font-size: 1.5rem;
+            }
+        }
+    }
+   }
+}

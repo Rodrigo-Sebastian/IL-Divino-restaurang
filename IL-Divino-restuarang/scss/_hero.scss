@@ -1,0 +1,83 @@
+#hero__section{
+    width: 100%;
+    .video__container{
+        position: relative;
+        width: 100%;
+        height: 83.6vh;
+        background-color: $background-color;
+        #main__video{
+            position: absolute;
+            object-fit: cover;
+            min-width: 100%;
+            height: 100%;
+        }
+    }
+    .hero__banner{
+        width: 100%;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.5);
+        bottom: 0;
+        box-sizing: border-box;
+        .hero__banner__title{
+            font-size: 8rem;
+            color: $font-color;
+            padding-left: 30rem;
+            font-weight: 100;
+        }
+        .hero__banner__description{
+            font-size: 3rem;
+            color: $font-color;
+            padding-left: 30rem;
+        }
+        .hero__btns{
+            display: flex;
+            flex-direction: row;
+            gap: 4rem;
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+            padding-left: 30rem;
+            .hero__banner__btn{
+                border-style: double;
+                border: -1px solid #fff;
+                padding: 1rem 4rem;
+                text-decoration: none;
+                color: #fff;
+                font-size: 3rem;
+                border-width: 1rem;
+                transition: all .5s ease;
+                &:hover{
+                    background-color: #412626;
+                    color: #b39648;
+                }
+            }
+        }
+    }
+}
+
+//MEDIA QUERYS//
+@media (max-width: 768px){
+    .video__container{
+        height: 86.5vh !important;
+        #main__video{
+            width: 100%;
+        }
+        .hero__banner{
+            padding: 2rem;
+            .hero__banner__title{
+                font-size: 4.5rem !important;
+                padding-left: 0 !important;
+            }
+            .hero__banner__description{
+                font-size: 2.5rem !important;
+                padding-left: 0 !important;
+            }
+            .hero__btns{
+                padding-left: 0 !important;
+                gap: 2rem;
+                .hero__banner__btn{
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+    }
+}
